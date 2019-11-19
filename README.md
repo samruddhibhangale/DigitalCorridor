@@ -7,7 +7,7 @@ Private blockchain application using corda
 See https://docs.corda.net/getting-set-up.html.
 ---------------------------------------------------------
 ####### Step 1#
-# Go to the project location- cd/Kale-poc
+# Go to the project location- cd/
    - Ubuntu
          ./gradlew.bat clean deployNodes
    - Windows
@@ -34,18 +34,5 @@ cd build/nodes/./runnodes
 #### Interacting with the webserver
 cd Client/build/libs - Java -jar corda-spring-webserver-0.1
 
-API calls:-
-Create Transaction
-POST - http://23.101.25.46:8080/amsAirport/createTransaction?otherParty=O=BOMAirport,L=Mumbai,C=IN
-attache XML payload
-
-Get ALL Transactions by it a ID
-GET  -  http://23.101.25.46:8080/amsAirport/getAllTransactionsById?airwayBillNumber=0004
-
-Get a Transaction(UNCONSUMED) by ID
-GET  -  http://23.101.25.46:8080/bomAirport/getTransactionById?airwayBillNumber=0004
-
-Get a Transaction details with msg type
-GET  -  http://23.101.25.46:8080/amsAirport/getPayloadByMessageTypeNum?uniqueMessageTypeNum=f66a6dce-cfe2-42e1-88b1-5dda200fba98&airwayBillNumber=0004
 
 
